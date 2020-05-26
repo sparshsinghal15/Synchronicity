@@ -1,0 +1,14 @@
+.child-1 {
+    background-color: red;
+}
+.child-2 {
+    background-color: blue;
+}
+.child-3 {
+    background-color: pink;
+}
+
+.container {
+    margin: 15px;
+    height: 100px;
+}

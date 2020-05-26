@@ -1,0 +1,11 @@
+.container {
+    margin: auto;
+    width:60%;
+    margin-top: 10px;
+}
+
+.mat-card {
+    background-color: black;
+    color: rgb(209, 202, 202);
+    text-align: center;
+}
