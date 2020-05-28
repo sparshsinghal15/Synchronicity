@@ -1,5 +1,13 @@
-<div class="flex-container container" fxLayout="row" fxLayoutAlign="space-evenly start" fxLayoutGap="32px">
-    <mat-card><img  src="/assets/images/2.jfif"></mat-card>
-    <mat-card><img  src="/assets/images/3.jpeg"></mat-card>
-    <mat-card><img  src="/assets/images/4.jfif"></mat-card>
+<h1> Gallery </h1>
+<div class="flex-container container">
+        <div fxLayout="row" fxLayout.sm="column" fxLayout.sm="column" fxLayoutAlign="space-around start" fxLayoutGap="26px">
+            <mat-card fxFlex *ngFor="let image of images">
+                <div class="imgContainer">
+                    <img  src="/assets/images/{{image.name}}">
+                    <!-- <span class="textOverlay">View image</span> -->
+                    <mat-card-title> {{image.title | uppercase}} </mat-card-title>
+                </div>    
+            </mat-card>
+        </div>
 </div>
+

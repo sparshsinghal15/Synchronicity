@@ -1,14 +1,55 @@
-.child-1 {
-    background-color: red;
-}
-.child-2 {
-    background-color: blue;
-}
-.child-3 {
-    background-color: pink;
+.container {
+    margin: auto;
+    margin-top: 70px;
+    height: 100px;
+    width: 70%;
 }
 
-.container {
-    margin: 15px;
-    height: 100px;
+img {
+    height: 280px;
+    width: 100%;
+    background-color: black;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+}
+
+img:hover {
+   opacity: 0.3; 
+}
+
+.mat-card {
+    padding: 0px;
+    padding-bottom: 15px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.mat-card:hover {
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mat-card-title:not(:first-child) {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 17px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: "Indie Flower";
+    color: white;
+    text-align: center;
+}
+
+.textOverlay {
+    position: absolute;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+
+.imgContainer {
+    position: relative;
 }

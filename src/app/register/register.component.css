@@ -1,0 +1,29 @@
+.container {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 100px;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    border: 1px solid white;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+}
+
+.divisions {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.divisions:nth-of-type(1) {
+    border-right: 1px solid white;
+}
+
+p {
+    font-family: "Lato";
+    margin: 20px;
+}

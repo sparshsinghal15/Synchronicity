@@ -1,11 +1,12 @@
 div {
     /* opacity: 0.95; */
     height: 700px;
-    background-image: url("/assets/images/1.png");
+    /* background-image: url("/assets/images/1.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
     margin: 0px;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 div:hover {
