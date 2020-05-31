@@ -1,11 +1,33 @@
 .container {
+    width: 50%;
     margin: auto;
-    width:60%;
-    margin-top: 10px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+    border: 1.5px solid white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+#heading {
+    margin-top: 20px;
+    margin-left: 500px;
+    text-align: center;
+    font-family: "Indie Flower";
+    border: 1.5px solid white;
+    padding: 20px;
+    color: white;
+    font-size: 45px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
 }
 
-.mat-card {
-    background-color: black;
-    color: rgb(209, 202, 202);
+.item {
+    height: 35px;
     text-align: center;
+    padding: 5px;
+    font-size: 15px;
+}
+.item:nth-of-type(1) {
+    border-right: 1px solid white;
 }

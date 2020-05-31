@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Image } from '../shared/image';
-import { IMAGES } from '../shared/images'
+import { ImageService } from '../services/image.service';
 
 @Component({
   selector: 'app-gallery',
@@ -9,11 +9,19 @@ import { IMAGES } from '../shared/images'
 })
 export class GalleryComponent implements OnInit {
 
-  images = IMAGES;
+  images: Image[];
+  selectedImage;
 
-  constructor() { }
+  constructor(private imageService: ImageService) { }
 
   ngOnInit(): void {
+    this.images = this.imageService.getImages();
+  }
+  onSelect (image: Image) {
+    this.selectedImage = image;
+  }
+  unSelect () {
+    this.selectedImage = false;
   }
 
 }

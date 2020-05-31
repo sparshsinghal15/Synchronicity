@@ -18,6 +18,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { RegisterComponent } from './register/register.component';
 
+import { ImageService } from './services/image.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +42,7 @@ import { RegisterComponent } from './register/register.component';
     MatInputModule,
     MatSelectModule
   ],
-  providers: [],
+  providers: [ImageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,6 +2,14 @@ import { Component, OnInit } from '@angular/core';
 
 var navbar = document.getElementById("navbar");
 
+const ITEMS = [
+  {name: 'antaragini'},
+  {name: 'about'},
+  {name: 'schedule'},
+  {name: 'register'},
+  {name: 'gallery'},
+  {name: 'sponsors'}
+]
 
 @Component({
   selector: 'app-navbar',
@@ -10,6 +18,7 @@ var navbar = document.getElementById("navbar");
 })
 export class NavbarComponent implements OnInit {
 
+  items = ITEMS;
   
   constructor() { }
 

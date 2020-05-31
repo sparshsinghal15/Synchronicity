@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PLACES } from '../shared/places'
 
 @Component({
   selector: 'app-schedule',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ScheduleComponent implements OnInit {
 
+  places = PLACES;
   constructor() { }
 
   ngOnInit(): void {

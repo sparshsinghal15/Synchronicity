@@ -1,13 +1,18 @@
 <h1> Gallery </h1>
 <div class="flex-container container">
         <div fxLayout="row" fxLayout.sm="column" fxLayout.sm="column" fxLayoutAlign="space-around start" fxLayoutGap="26px">
-            <mat-card fxFlex *ngFor="let image of images">
+            <mat-card fxFlex *ngFor="let image of images" (click)="onSelect(image)">
                 <div class="imgContainer">
-                    <img  src="/assets/images/{{image.name}}">
-                    <!-- <span class="textOverlay">View image</span> -->
+                    <img class="mainImages" src="/assets/images/{{image.name}}">
+                    <span class="textOverlay">View Image</span>
                     <mat-card-title> {{image.title | uppercase}} </mat-card-title>
                 </div>    
             </mat-card>
         </div>
+</div>
+<div class="showImageBack" *ngIf="selectedImage"></div>
+<div class="showImage" *ngIf="selectedImage">
+    <img class="selectedImage" src="/assets/images/{{selectedImage.name}}" alt="name">
+    <i class="fa fa-times-circle" aria-hidden="true" (click)="unSelect"></i>
 </div>
 
