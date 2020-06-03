@@ -8,7 +8,8 @@ const ITEMS = [
   {name: 'schedule'},
   {name: 'register'},
   {name: 'gallery'},
-  {name: 'sponsors'}
+  {name: 'sponsors'},
+  {name: 'contact'}
 ]
 
 @Component({
@@ -19,6 +20,7 @@ const ITEMS = [
 export class NavbarComponent implements OnInit {
 
   items = ITEMS;
+  selectedItem = false;
   
   constructor() { }
 
@@ -31,6 +33,9 @@ export class NavbarComponent implements OnInit {
     } else {
       navbar.classList.remove("sticky");
     }
+  }
+  removeSelectedClass(){
+    this.selectedItem = false;
   }
 
 }

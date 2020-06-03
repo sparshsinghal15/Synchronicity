@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Image } from '../shared/image';
-import { IMAGES } from '../shared/images';
+import { Image, PLACES, NAMES, NAMES2 } from '../shared/content';
+import { IMAGES } from '../shared/content';
 
 @Injectable({
   providedIn: 'root'
@@ -11,5 +11,14 @@ export class ImageService {
 
   getImages(): Image[] {
     return IMAGES;
+  }
+  getPlaces() {
+    return PLACES;
+  }
+  getNames() {
+    return NAMES;
+  }
+  getNames2() {
+    return NAMES2;
   }
 }

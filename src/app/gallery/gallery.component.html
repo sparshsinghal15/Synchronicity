@@ -13,6 +13,8 @@
 <div class="showImageBack" *ngIf="selectedImage"></div>
 <div class="showImage" *ngIf="selectedImage">
     <img class="selectedImage" src="/assets/images/{{selectedImage.name}}" alt="name">
-    <i class="fa fa-times-circle" aria-hidden="true" (click)="unSelect"></i>
+    <i id="cross" class="fa fa-times-circle" aria-hidden="true" (click)="unSelect"></i>
+    <i id="forward" class="fas fa-arrow-circle-right"></i>
+    <i id="backward" class="fas fa-arrow-circle-left"></i>
 </div>
 

@@ -19,6 +19,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { RegisterComponent } from './register/register.component';
 
 import { ImageService } from './services/image.service';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ImageService } from './services/image.service';
     AboutComponent,
     GalleryComponent,
     ScheduleComponent,
-    RegisterComponent
+    RegisterComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

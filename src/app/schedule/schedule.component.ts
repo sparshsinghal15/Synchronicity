@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PLACES } from '../shared/places'
+import { ImageService } from '../services/image.service';
 
 @Component({
   selector: 'app-schedule',
@@ -8,10 +8,11 @@ import { PLACES } from '../shared/places'
 })
 export class ScheduleComponent implements OnInit {
 
-  places = PLACES;
-  constructor() { }
+  places;
+  constructor(private imageSevice: ImageService) { }
 
   ngOnInit(): void {
+    this.places = this.imageSevice.getPlaces();
   }
 
 }

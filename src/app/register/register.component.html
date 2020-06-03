@@ -1,4 +1,6 @@
-<div class="flex-container container" fxLayout="row" fxGap="0px">
+<div id="heading">Register</div>
+
+<div class="flex-container container" fxLayout="row" fxLayoutGap="0px">
     <div fxFlex class="divisions">
         <h1>Guidlines</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate dolorum adipisci recusandae ex laborum odit magnam, sit placeat, incidunt blanditiis quasi quaerat ipsam assumenda dolores commodi ipsum doloribus sapiente libero.</p>
@@ -8,11 +10,42 @@
     </div>
     <div fxFlex class="divisions">
         <h1>Register</h1>
-        <!-- <mat-form-field>
-            <input matInput type="text" placeholder="Name" name="name">
-        </mat-form-field>
-        <label>
-            <input type="text" name="name" placeholder="Name">
-        </label> -->
+        <div class="flex-container inputsContainer" fxLayout="row" fxLayoutGap="60px">
+            <label fxFlex="40">
+                Band Name
+                <input type="text" name="name" placeholder="Band Name">
+            </label>
+            <label fxFlex="40">
+                Email ID
+                <input type="text" name="name" placeholder="EMAIL ID">
+            </label>
+        </div>
+        <div class="flex-container inputsContainer" fxLayout="row" fxLayoutGap="60px">
+            <label fxFlex="97">
+                City   
+                <select>
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                </select>
+            </label>
+        </div>
+        <div class="flex-container inputsContainer" fxLayout="row" fxLayoutGap="60px" *ngFor="let name of names">
+            <label fxFlex="40">
+                {{name.col1}}
+                <input type="text" name="name" placeholder={{name.col1}}>
+            </label>
+            <label fxFlex="40">
+                {{name.col2}}
+                <input type="text" name="name" placeholder={{name.col2}}>
+            </label>
+        </div>
+        <div class="flex-container inputsContainer" fxLayout="row" fxLayoutGap="60px" *ngFor="let name of names2">
+            <label fxFlex="90">
+                {{name.name}}
+                <input type="text" name="name" placeholder={{name.placeholder}}>
+            </label>
+        </div>
+        <button>Submit</button>
     </div>
 </div> 
