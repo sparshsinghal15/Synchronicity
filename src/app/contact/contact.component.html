@@ -1,1 +1,14 @@
+<div id="heading">contacts</div>
 
+<div class="flex-container">
+    <div class="container" fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="center center">
+        <mat-card fxFlex="30" *ngFor="let contact of contacts">
+            <img mat-card-image src="./assets/images/{{contact.image}}">
+            <div class="contactDetails">
+                <p> {{contact.name}} </p>
+                <p> {{contact.number}} </p>
+                <p> {{contact.email}} </p>
+            </div>
+        </mat-card>
+    </div>
+</div>

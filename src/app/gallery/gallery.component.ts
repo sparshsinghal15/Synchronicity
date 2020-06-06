@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Image } from '../shared/content';
+import { Image, IMAGES } from '../shared/content';
 import { ImageService } from '../services/image.service';
 
 @Component({
@@ -10,18 +10,28 @@ import { ImageService } from '../services/image.service';
 export class GalleryComponent implements OnInit {
 
   images: Image[];
-  selectedImage;
+  selectedImage: Image;
+  currentImage: Image;
+  removeClass = false;
 
   constructor(private imageService: ImageService) { }
 
   ngOnInit(): void {
     this.images = this.imageService.getImages();
   }
-  onSelect (image: Image) {
-    this.selectedImage = image;
+  onSelect (imageId: number) {
+    this.removeClass = false;
+    this.selectedImage = this.imageService.getImageById(imageId);
+    this.currentImage.id = this.selectedImage.id;
   }
   unSelect () {
-    this.selectedImage = false;
+    this.removeClass = true;
+  }
+  forward(){
+    if(this.selectedImage.id < 3){
+      this.currentImage.id = this.selectedImage.id + 1;
+    }
+    this.onSelect(this.currentImage.id);
   }
 
 }

@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Indie+Flower&family=Lato:wght@400;700&family=Raleway&family=Tenali+Ramakrishna&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.11.2/css/all.css");
 
 body {
     margin: 0px;

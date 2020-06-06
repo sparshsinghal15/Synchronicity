@@ -1,18 +1,22 @@
 export class Image {
+    id: number;
     name: string;
     title: string;
 }
 
 export const IMAGES: Image[] = [
     {
+      id: 1,
       name: "2.jfif",
       title: "City"
     },
     {
+        id: 2,
       name: "3.jpeg",
       title: "Perspective"
     },
     {
+        id: 3,
       name: "4.jfif",
       title: "Hidden Horcrux"
     }
@@ -59,5 +63,49 @@ export const NAMES2 = [
     {
         name: "Other Links",
         placeholder: ""
+    }
+]
+
+export const CONTACTS = [
+    {
+        image: "6.jpg",
+        name: "Frodo Baggins",
+        number: "0000000000",
+        email: "abc@iitk.ac.in"
+    },
+    {
+        image: "7.jpg",
+        name: "Sherlock Holmes",
+        number: "1111111111",
+        email: "pqr@iitk.ac.in"
+    },
+    {
+        image: "8.jfif",
+        name: "Leonardo DiCaprio",
+        number: "22222222222",
+        email: "xyz@iitk.ac.in" 
+    }
+]
+
+export const SPONSORS = [
+    {
+        logo: "10.svg",
+        description: "sponsored by",
+        title: "Apple" 
+    },
+    {
+        logo: "11.png",
+        description: "powered by",
+        title: "ferrari"
+    },
+    {
+        logo: "12.png",
+        description: "copowered by",
+        title: "MDH"
+    },
+    {
+        logo: "13.svg",
+        description: "presented by",
+        title: "Adobe"
     }
 ]

@@ -20,6 +20,7 @@ import { RegisterComponent } from './register/register.component';
 
 import { ImageService } from './services/image.service';
 import { ContactComponent } from './contact/contact.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ContactComponent } from './contact/contact.component';
     GalleryComponent,
     ScheduleComponent,
     RegisterComponent,
-    ContactComponent
+    ContactComponent,
+    SponsorsComponent
   ],
   imports: [
     BrowserModule,

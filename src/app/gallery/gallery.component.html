@@ -1,7 +1,7 @@
 <h1> Gallery </h1>
 <div class="flex-container container">
-        <div fxLayout="row" fxLayout.sm="column" fxLayout.sm="column" fxLayoutAlign="space-around start" fxLayoutGap="26px">
-            <mat-card fxFlex *ngFor="let image of images" (click)="onSelect(image)">
+        <div fxLayout="row wrap" fxLayout.sm="column" fxLayout.sm="column" fxLayoutAlign="space-around start" fxLayoutGap="26px">
+            <mat-card fxFlex="30" *ngFor="let image of images" (click)="onSelect(image.id)">
                 <div class="imgContainer">
                     <img class="mainImages" src="/assets/images/{{image.name}}">
                     <span class="textOverlay">View Image</span>
@@ -10,11 +10,11 @@
             </mat-card>
         </div>
 </div>
-<div class="showImageBack" *ngIf="selectedImage"></div>
-<div class="showImage" *ngIf="selectedImage">
+<div class="showImageBack" *ngIf="selectedImage" [class.removeDisplay]="removeClass"></div>
+<div class="showImage" *ngIf="selectedImage" [class.removeDisplay]="removeClass">
     <img class="selectedImage" src="/assets/images/{{selectedImage.name}}" alt="name">
-    <i id="cross" class="fa fa-times-circle" aria-hidden="true" (click)="unSelect"></i>
-    <i id="forward" class="fas fa-arrow-circle-right"></i>
+    <i id="cross" class="fa fa-times-circle" aria-hidden="true" (click)="unSelect()"></i>
+    <i id="forward" class="fas fa-arrow-circle-right" (click)="forward()"></i>
     <i id="backward" class="fas fa-arrow-circle-left"></i>
 </div>
 

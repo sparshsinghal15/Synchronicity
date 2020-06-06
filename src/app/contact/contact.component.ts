@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageService } from '../services/image.service';
 
 @Component({
   selector: 'app-contact',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  contacts;
+  constructor(private imageService: ImageService) { }
 
   ngOnInit(): void {
+    this.contacts = this.imageService.getContacts(); 
   }
 
 }

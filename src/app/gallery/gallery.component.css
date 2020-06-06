@@ -124,9 +124,15 @@ h1 {
     height: 1000px;
     position: relative;
     top: -440px;
+    /* transition: all linear 0.2s; */
 }
 
 .imgContainer:hover .textOverlay {
     visibility: visible;
     opacity: 1;
+}
+
+.removeDisplay {
+    /* visibility: hidden; */
+    display: none;
 }
