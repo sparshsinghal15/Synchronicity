@@ -136,3 +136,26 @@ h1 {
     /* visibility: hidden; */
     display: none;
 }
+
+.slick-slider {
+    /* margin-bottom: 30px; */
+    width: 60%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+.content {
+    margin-top: 10px;
+    margin-bottom: 10vh;
+    height: 200px;
+}
+@media screen and (max-width:800px){
+    .slick-slider{
+        width:80%;
+        padding-left: 0px;
+        z-index: 1;
+        position: absolute;
+        right: 0vw;
+    }
+}

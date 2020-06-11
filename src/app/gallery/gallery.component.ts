@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { Image, IMAGES } from '../shared/content';
 import { ImageService } from '../services/image.service';
+
+class Image {
+  id: number;
+  name: string;
+  title: string;
+}
 
 @Component({
   selector: 'app-gallery',
@@ -33,5 +38,12 @@ export class GalleryComponent implements OnInit {
     }
     this.onSelect(this.currentImage.id);
   }
+  slideConfig = {
+    "slidesToShow": 1,
+    "slidesToScroll": 1,
+    "dots": true,
+    "infinite": true,
+    "touchMove": true
+  };
 
 }

@@ -14,7 +14,14 @@
 <div class="showImage" *ngIf="selectedImage" [class.removeDisplay]="removeClass">
     <img class="selectedImage" src="/assets/images/{{selectedImage.name}}" alt="name">
     <i id="cross" class="fa fa-times-circle" aria-hidden="true" (click)="unSelect()"></i>
-    <i id="forward" class="fas fa-arrow-circle-right" (click)="forward()"></i>
-    <i id="backward" class="fas fa-arrow-circle-left"></i>
+    <!-- <i id="forward" class="fas fa-arrow-circle-right" (click)="forward()"></i>
+    <i id="backward" class="fas fa-arrow-circle-left"></i> -->
 </div>
 
+<div class="content">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let image of images" class="slide">
+            <img src="/assets/images/{{image.name}}" width="100%" height="600px">
+        </div>
+    </ngx-slick-carousel>
+</div>

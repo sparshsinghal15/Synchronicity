@@ -9,6 +9,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -44,7 +45,8 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
     MatListModule,
     MatFormFieldModule,
     MatInputModule,
-    MatSelectModule
+    MatSelectModule,
+    SlickCarouselModule
   ],
   providers: [ImageService],
   bootstrap: [AppComponent]
