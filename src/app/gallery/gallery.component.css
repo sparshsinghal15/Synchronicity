@@ -147,15 +147,11 @@ h1 {
 }
 .content {
     margin-top: 10px;
-    margin-bottom: 10vh;
-    height: 200px;
+    /* margin-bottom: 10vh; */
+    height: 100vmax;
 }
-@media screen and (max-width:800px){
-    .slick-slider{
-        width:80%;
-        padding-left: 0px;
-        z-index: 1;
-        position: absolute;
-        right: 0vw;
+@media screen and (min-width:800px){
+    img {
+        height: 500px;
     }
 }

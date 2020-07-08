@@ -1,9 +1,10 @@
 div {
     /* opacity: 0.95; */
-    height: 930px;
+    height: 100vh;
+    background-attachment: fixed;
     /* background-image: url("/assets/images/1.png"); */
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
     color: white;
     margin: 0px;
     background: rgba(0, 0, 0, 0.6);
@@ -17,15 +18,23 @@ h1 {
     font-family: "Indie Flower";
     margin: 0px;
     text-align: center;
-    padding-top: 160px;
-    font-size: 100px;
+    padding-top: 20vmin;
+    font-size: 12vmin;
 }
 
 p {
     margin: 0px;
-    padding: 150px;
+    padding: 20vmin;
     padding-top: 10px;
     font-family: Raleway;
-    font-size: 20px;
+    font-size: 2.7vmin;
     text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    p {
+        font-size: 3.5vmin;
+    }
+    div {
+        height: 120vh;
+    }
 }

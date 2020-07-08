@@ -1,17 +1,22 @@
 #heading {
     margin-top: 20px;
-    margin-left: 500px;
+    /* margin-left: 60vmin; */
     text-align: center;
     font-family: "Indie Flower";
     border: 1.5px solid white;
     padding: 20px;
     color: white;
     font-size: 45px;
-    width: 500px;
+    /* width: 500px; */
     background-color: rgba(0, 0, 0, 0.8);
     font-weight: bold;
+    /* width: 100vmax; */
 }
-
+.container-head {
+    width: 25%;
+    margin: auto;
+    min-width: 300px;
+}
 .container {
     width: 80%;
     margin: auto;
@@ -21,20 +26,26 @@
 img {
     margin-top: auto;
     height: 250px;
-    width: 200px;
+    /* width: 200px; */
 }
 
 mat-card {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
-    height: 250px;
+    /* height: 250px; */
     color: white;
     font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
 }
+@media only screen and (max-width: 1000px) {
+    mat-card {
+        width: 50vmin;
+    }
+  }
 
 .contactDetails {
     text-align: center;
     margin: auto;
-    margin-top: 40px;
-    float: right;
+    /* margin-top: 40px; */
+    /* float: right; */
 }

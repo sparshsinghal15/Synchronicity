@@ -1,8 +1,10 @@
-<div id="heading">contacts</div>
+<div class="flex-container"><div class="container-head">
+    <div id="heading">contacts</div>
+</div></div>
 
 <div class="flex-container">
-    <div class="container" fxLayout="row" fxLayoutGap="40px" fxLayoutAlign="center center">
-        <mat-card fxFlex="30" *ngFor="let contact of contacts">
+    <div class="container" fxLayout="row" fxLayout.xs="column" fxLayout.sm="row wrap" fxLayoutGap="40px" fxLayoutAlign="center center">
+        <mat-card fxFlex="20" fxFlex.sm="40" *ngFor="let contact of contacts">
             <img mat-card-image src="./assets/images/{{contact.image}}">
             <div class="contactDetails">
                 <p> {{contact.name}} </p>
@@ -12,3 +14,5 @@
         </mat-card>
     </div>
 </div>
+
+<!-- </div> -->

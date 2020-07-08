@@ -91,7 +91,13 @@ export class ImageService {
         name: "Leonardo DiCaprio",
         number: "22222222222",
         email: "xyz@iitk.ac.in" 
-    }
+    },
+    {
+      image: "6.jpg",
+      name: "Frodo Baggins",
+      number: "0000000000",
+      email: "abc@iitk.ac.in"
+  } 
   ]
   
   SPONSORS = [

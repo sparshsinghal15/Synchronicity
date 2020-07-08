@@ -18,10 +18,10 @@ import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { RegisterComponent } from './register/register.component';
-
-import { ImageService } from './services/image.service';
 import { ContactComponent } from './contact/contact.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
+
+import { ImageService } from './services/image.service';
 
 @NgModule({
   declarations: [

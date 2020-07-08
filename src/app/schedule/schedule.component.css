@@ -8,16 +8,21 @@
     border: 1.5px solid white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
+.container-head {
+    width: 25%;
+    margin: auto;
+    min-width: 300px;
+}
 #heading {
     margin-top: 20px;
-    margin-left: 500px;
+    /* margin-left: 500px; */
     text-align: center;
     font-family: "Indie Flower";
     border: 1.5px solid white;
     padding: 20px;
     color: white;
-    font-size: 45px;
-    width: 500px;
+    font-size: 5vmin;
+    /* width: 500px; */
     background-color: rgba(0, 0, 0, 0.8);
     font-weight: bold;
 }
